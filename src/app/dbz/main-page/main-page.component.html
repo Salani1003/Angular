@@ -3,12 +3,17 @@
 
 <div class="row">
   <div class="col">
-    <app-personajes [personaje]="personaje"></app-personajes>
+    <!-- <app-personajes [personaje]="personaje"></app-personajes> -->
+    <app-personajes></app-personajes>
   </div>
   <div class="col">
-    <app-agregar
+    <!-- <app-agregar
       [nuevo]="nuevo"
       (onNuevoPersonaje)="agregarNuevoPersonaje($event)"
-    ></app-agregar>
+    ></app-agregar> -->
+    <app-agregar [nuevo]="nuevo"></app-agregar>
+    <div class="col">
+      <button (click)="eliminar()">Eliminar Personaje</button>
+    </div>
   </div>
 </div>
